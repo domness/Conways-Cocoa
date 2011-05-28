@@ -3,7 +3,7 @@
 //  ConwaysTests
 //
 //  Created by Dominic Wroblewski on 28/05/2011.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Dominic Wroblewski. All rights reserved.
 //
 
 #import "ConwaysTests.h"
@@ -13,21 +13,22 @@
 
 - (void)setUp
 {
-    [super setUp];
+  [super setUp];
     
-    // Set-up code here.
+  cell = [[Cell alloc] init];
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
-    [super tearDown];
+  [cell release];
+  
+  [super tearDown];
 }
 
-- (void)testExample
+- (void)testCellInitsAsDead
 {
-    STFail(@"Unit tests are not implemented yet in ConwaysTests");
+  BOOL state = FALSE;
+  STAssertEquals(state, cell.state, @"Cell state was not dead.");
 }
 
 @end
