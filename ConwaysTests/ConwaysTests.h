@@ -11,7 +11,6 @@
 
 @interface ConwaysTests : SenTestCase {
 @private
-  Cell * cell;
 }
 
 @end

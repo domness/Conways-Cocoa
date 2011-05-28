@@ -11,10 +11,15 @@
 
 @interface Cell : NSObject {
   BOOL state;
+  NSMutableArray * neighbours;
+@private
 }
 
 @property (nonatomic, assign) BOOL state;
+@property (nonatomic, assign) NSMutableArray * neighbours;
 
 - (Cell *) init;
+- (NSUInteger)neighbours_count;
+- (void)addNeighbour:(Cell *)cell;
 
 @end

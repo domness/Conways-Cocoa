@@ -9,12 +9,24 @@
 #import "Cell.h"
 
 @implementation Cell
-@synthesize state;
+@synthesize state, neighbours;
 
 - (Cell *) init
 {
   state = FALSE;
+  neighbours = [[NSMutableArray alloc] init];
   return self;
+}
+
+- (NSUInteger)neighbours_count
+{
+  return [neighbours count];
+}
+
+- (void)addNeighbour:(Cell *)cell
+{
+  [neighbours addObject:cell];
+  [[cell neighbours] addObject:self];
 }
 
 - (void)dealloc
