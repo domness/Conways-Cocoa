@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FD9CDD1391B52500B596D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FD9CDC1391B52500B596D9 /* Cocoa.framework */; };
+		04FD9CE71391B52500B596D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04FD9CE51391B52500B596D9 /* InfoPlist.strings */; };
+		04FD9CEA1391B52500B596D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD9CE91391B52500B596D9 /* main.m */; };
+		04FD9CED1391B52500B596D9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 04FD9CEB1391B52500B596D9 /* Credits.rtf */; };
+		04FD9CF01391B52500B596D9 /* ConwaysAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD9CEF1391B52500B596D9 /* ConwaysAppDelegate.m */; };
+		04FD9CF31391B52600B596D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FD9CF11391B52600B596D9 /* MainMenu.xib */; };
+		04FD9CFA1391B52600B596D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FD9CDC1391B52500B596D9 /* Cocoa.framework */; };
+		04FD9D021391B52600B596D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04FD9D001391B52600B596D9 /* InfoPlist.strings */; };
+		04FD9D051391B52600B596D9 /* ConwaysTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 04FD9D041391B52600B596D9 /* ConwaysTests.h */; };
+		04FD9D071391B52600B596D9 /* ConwaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD9D061391B52600B596D9 /* ConwaysTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04FD9CFB1391B52600B596D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FD9CCF1391B52400B596D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FD9CD71391B52500B596D9;
+			remoteInfo = Conways;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04FD9CD81391B52500B596D9 /* Conways.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conways.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FD9CDC1391B52500B596D9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		04FD9CDF1391B52500B596D9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		04FD9CE01391B52500B596D9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		04FD9CE11391B52500B596D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04FD9CE41391B52500B596D9 /* Conways-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Conways-Info.plist"; sourceTree = "<group>"; };
+		04FD9CE61391B52500B596D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04FD9CE81391B52500B596D9 /* Conways-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Conways-Prefix.pch"; sourceTree = "<group>"; };
+		04FD9CE91391B52500B596D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04FD9CEC1391B52500B596D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		04FD9CEE1391B52500B596D9 /* ConwaysAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConwaysAppDelegate.h; sourceTree = "<group>"; };
+		04FD9CEF1391B52500B596D9 /* ConwaysAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConwaysAppDelegate.m; sourceTree = "<group>"; };
+		04FD9CF21391B52600B596D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		04FD9CF91391B52600B596D9 /* ConwaysTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConwaysTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FD9CFF1391B52600B596D9 /* ConwaysTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConwaysTests-Info.plist"; sourceTree = "<group>"; };
+		04FD9D011391B52600B596D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04FD9D031391B52600B596D9 /* ConwaysTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConwaysTests-Prefix.pch"; sourceTree = "<group>"; };
+		04FD9D041391B52600B596D9 /* ConwaysTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConwaysTests.h; sourceTree = "<group>"; };
+		04FD9D061391B52600B596D9 /* ConwaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConwaysTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FD9CD51391B52500B596D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FD9CDD1391B52500B596D9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FD9CF51391B52600B596D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FD9CFA1391B52600B596D9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FD9CCD1391B52400B596D9 = {
+			isa = PBXGroup;
+			children = (
+				04FD9CE21391B52500B596D9 /* Conways */,
+				04FD9CFD1391B52600B596D9 /* ConwaysTests */,
+				04FD9CDB1391B52500B596D9 /* Frameworks */,
+				04FD9CD91391B52500B596D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04FD9CD91391B52500B596D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FD9CD81391B52500B596D9 /* Conways.app */,
+				04FD9CF91391B52600B596D9 /* ConwaysTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FD9CDB1391B52500B596D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04FD9CDC1391B52500B596D9 /* Cocoa.framework */,
+				04FD9CDE1391B52500B596D9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04FD9CDE1391B52500B596D9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04FD9CDF1391B52500B596D9 /* AppKit.framework */,
+				04FD9CE01391B52500B596D9 /* CoreData.framework */,
+				04FD9CE11391B52500B596D9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		04FD9CE21391B52500B596D9 /* Conways */ = {
+			isa = PBXGroup;
+			children = (
+				04FD9CEE1391B52500B596D9 /* ConwaysAppDelegate.h */,
+				04FD9CEF1391B52500B596D9 /* ConwaysAppDelegate.m */,
+				04FD9CF11391B52600B596D9 /* MainMenu.xib */,
+				04FD9CE31391B52500B596D9 /* Supporting Files */,
+			);
+			path = Conways;
+			sourceTree = "<group>";
+		};
+		04FD9CE31391B52500B596D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04FD9CE41391B52500B596D9 /* Conways-Info.plist */,
+				04FD9CE51391B52500B596D9 /* InfoPlist.strings */,
+				04FD9CE81391B52500B596D9 /* Conways-Prefix.pch */,
+				04FD9CE91391B52500B596D9 /* main.m */,
+				04FD9CEB1391B52500B596D9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04FD9CFD1391B52600B596D9 /* ConwaysTests */ = {
+			isa = PBXGroup;
+			children = (
+				04FD9D041391B52600B596D9 /* ConwaysTests.h */,
+				04FD9D061391B52600B596D9 /* ConwaysTests.m */,
+				04FD9CFE1391B52600B596D9 /* Supporting Files */,
+			);
+			path = ConwaysTests;
+			sourceTree = "<group>";
+		};
+		04FD9CFE1391B52600B596D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04FD9CFF1391B52600B596D9 /* ConwaysTests-Info.plist */,
+				04FD9D001391B52600B596D9 /* InfoPlist.strings */,
+				04FD9D031391B52600B596D9 /* ConwaysTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FD9CD71391B52500B596D9 /* Conways */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FD9D0A1391B52600B596D9 /* Build configuration list for PBXNativeTarget "Conways" */;
+			buildPhases = (
+				04FD9CD41391B52500B596D9 /* Sources */,
+				04FD9CD51391B52500B596D9 /* Frameworks */,
+				04FD9CD61391B52500B596D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Conways;
+			productName = Conways;
+			productReference = 04FD9CD81391B52500B596D9 /* Conways.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04FD9CF81391B52600B596D9 /* ConwaysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FD9D0D1391B52600B596D9 /* Build configuration list for PBXNativeTarget "ConwaysTests" */;
+			buildPhases = (
+				04FD9CF41391B52600B596D9 /* Sources */,
+				04FD9CF51391B52600B596D9 /* Frameworks */,
+				04FD9CF61391B52600B596D9 /* Resources */,
+				04FD9CF71391B52600B596D9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FD9CFC1391B52600B596D9 /* PBXTargetDependency */,
+			);
+			name = ConwaysTests;
+			productName = ConwaysTests;
+			productReference = 04FD9CF91391B52600B596D9 /* ConwaysTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FD9CCF1391B52400B596D9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 04FD9CD21391B52400B596D9 /* Build configuration list for PBXProject "Conways" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04FD9CCD1391B52400B596D9;
+			productRefGroup = 04FD9CD91391B52500B596D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FD9CD71391B52500B596D9 /* Conways */,
+				04FD9CF81391B52600B596D9 /* ConwaysTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FD9CD61391B52500B596D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FD9CE71391B52500B596D9 /* InfoPlist.strings in Resources */,
+				04FD9CED1391B52500B596D9 /* Credits.rtf in Resources */,
+				04FD9CF31391B52600B596D9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FD9CF61391B52600B596D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FD9D021391B52600B596D9 /* InfoPlist.strings in Resources */,
+				04FD9D051391B52600B596D9 /* ConwaysTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04FD9CF71391B52600B596D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FD9CD41391B52500B596D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FD9CEA1391B52500B596D9 /* main.m in Sources */,
+				04FD9CF01391B52500B596D9 /* ConwaysAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FD9CF41391B52600B596D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FD9D071391B52600B596D9 /* ConwaysTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04FD9CFC1391B52600B596D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FD9CD71391B52500B596D9 /* Conways */;
+			targetProxy = 04FD9CFB1391B52600B596D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04FD9CE51391B52500B596D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FD9CE61391B52500B596D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04FD9CEB1391B52500B596D9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FD9CEC1391B52500B596D9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		04FD9CF11391B52600B596D9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FD9CF21391B52600B596D9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		04FD9D001391B52600B596D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FD9D011391B52600B596D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04FD9D081391B52600B596D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		04FD9D091391B52600B596D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04FD9D0B1391B52600B596D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Conways/Conways-Prefix.pch";
+				INFOPLIST_FILE = "Conways/Conways-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04FD9D0C1391B52600B596D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Conways/Conways-Prefix.pch";
+				INFOPLIST_FILE = "Conways/Conways-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		04FD9D0E1391B52600B596D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Conways.app/Contents/MacOS/Conways";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConwaysTests/ConwaysTests-Prefix.pch";
+				INFOPLIST_FILE = "ConwaysTests/ConwaysTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		04FD9D0F1391B52600B596D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Conways.app/Contents/MacOS/Conways";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConwaysTests/ConwaysTests-Prefix.pch";
+				INFOPLIST_FILE = "ConwaysTests/ConwaysTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FD9CD21391B52400B596D9 /* Build configuration list for PBXProject "Conways" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FD9D081391B52600B596D9 /* Debug */,
+				04FD9D091391B52600B596D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FD9D0A1391B52600B596D9 /* Build configuration list for PBXNativeTarget "Conways" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FD9D0B1391B52600B596D9 /* Debug */,
+				04FD9D0C1391B52600B596D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04FD9D0D1391B52600B596D9 /* Build configuration list for PBXNativeTarget "ConwaysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FD9D0E1391B52600B596D9 /* Debug */,
+				04FD9D0F1391B52600B596D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04FD9CCF1391B52400B596D9 /* Project object */;
+}

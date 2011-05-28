@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Conways' target in the 'Conways' project
+//
+
+#ifdef __OBJC__
+  #import <Cocoa/Cocoa.h>
+#endif
