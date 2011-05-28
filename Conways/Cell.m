@@ -25,8 +25,11 @@
 
 - (void)addNeighbour:(Cell *)cell
 {
-  [neighbours addObject:cell];
-  [[cell neighbours] addObject:self];
+  if(![neighbours containsObject:cell])
+  {
+    [neighbours addObject:cell];
+    [[cell neighbours] addObject:self];
+  }
 }
 
 - (void)dealloc
