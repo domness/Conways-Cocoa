@@ -24,8 +24,7 @@
 - (void)testCellInitsAsDead
 {
   Cell * cell = [[Cell alloc] init];
-  BOOL state = FALSE;
-  STAssertEquals(state, cell.state, @"Cell state was not dead.");
+  STAssertFalse(cell.state, @"");
 }
 
 - (void)testShouldHaveNeigbours
@@ -36,13 +35,13 @@
   NSUInteger zero = 0;
   NSUInteger one = 1;
 
-  STAssertEquals(zero, cell1.neighbours_count, @"Cell1 had incorrect neighbours");
-  STAssertEquals(zero, cell2.neighbours_count, @"Cell2 had incorrect neighbours");
+  STAssertEquals(zero, cell1.neighboursCount, @"");
+  STAssertEquals(zero, cell2.neighboursCount, @"");
 
   [cell1 addNeighbour:cell2];
 
-  STAssertEquals(one, cell1.neighbours_count, @"Cell1 had incorrect neighbours");
-  STAssertEquals(one, cell2.neighbours_count, @"Cell2 had incorrect neighbours");
+  STAssertEquals(one, cell1.neighboursCount, @"");
+  STAssertEquals(one, cell2.neighboursCount, @"");
 }
 
 - (void)testShouldOnlyHaveASpecificCellOnce
@@ -53,14 +52,33 @@
   NSUInteger zero = 0;
   NSUInteger one = 1;
 
-  STAssertEquals(zero, cell1.neighbours_count, @"Cell1 had incorrect neighbours");
-  STAssertEquals(zero, cell2.neighbours_count, @"Cell2 had incorrect neighbours");
+  STAssertEquals(zero, cell1.neighboursCount, @"");
+  STAssertEquals(zero, cell2.neighboursCount, @"");
 
   [cell1 addNeighbour:cell2];
   [cell1 addNeighbour:cell2];
 
-  STAssertEquals(one, cell1.neighbours_count, @"Cell1 had incorrect neighbours");
-  STAssertEquals(one, cell2.neighbours_count, @"Cell2 had incorrect neighbours");
+  STAssertEquals(one, cell1.neighboursCount, @"");
+  STAssertEquals(one, cell2.neighboursCount, @"");
+}
+
+- (void)testShouldHaveAliveNeighbours
+{
+  Cell * cell1 = [[Cell alloc] init];
+  Cell * cell2 = [[Cell alloc] init];
+  Cell * cell3 = [[Cell alloc] init];
+
+  NSUInteger zero = 0;
+  NSUInteger one = 1;
+  NSUInteger two = 2;
+
+  [cell1 addNeighbour:cell2];
+  STAssertEquals(zero, cell1.aliveNeighboursCount, @"");
+  cell2.state = TRUE;
+  STAssertEquals(one, cell1.aliveNeighboursCount, @"");
+  cell3.state = TRUE;
+  [cell1 addNeighbour:cell3];
+  STAssertEquals(two, cell1.aliveNeighboursCount, @"");
 }
 
 @end

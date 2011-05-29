@@ -18,8 +18,9 @@
 @property (nonatomic, assign) BOOL state;
 @property (nonatomic, assign) NSMutableArray * neighbours;
 
-- (Cell *) init;
-- (NSUInteger)neighbours_count;
+- (Cell *)init;
+- (NSUInteger)neighboursCount;
+- (NSUInteger)aliveNeighboursCount;
 - (void)addNeighbour:(Cell *)cell;
 
 @end

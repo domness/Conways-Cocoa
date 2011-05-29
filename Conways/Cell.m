@@ -11,16 +11,29 @@
 @implementation Cell
 @synthesize state, neighbours;
 
-- (Cell *) init
+- (Cell *)init
 {
   state = FALSE;
   neighbours = [[NSMutableArray alloc] init];
   return self;
 }
 
-- (NSUInteger)neighbours_count
+- (NSUInteger)neighboursCount
 {
   return [neighbours count];
+}
+
+- (NSUInteger)aliveNeighboursCount
+{
+  int alive = 0;
+  for (Cell * n in neighbours)
+  {
+    if (n.state)
+    {
+      alive += 1;
+    }
+  }
+  return alive;
 }
 
 - (void)addNeighbour:(Cell *)cell
