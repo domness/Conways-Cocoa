@@ -8,6 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "Cell.h"
+#import "Grid.h"
 
 @interface ConwaysTests : SenTestCase {
 @private
