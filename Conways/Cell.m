@@ -9,7 +9,7 @@
 #import "Cell.h"
 
 @implementation Cell
-@synthesize state, neighbours;
+@synthesize state, nextState, neighbours;
 
 - (Cell *)init
 {
@@ -42,6 +42,27 @@
   {
     [neighbours addObject:cell];
     [[cell neighbours] addObject:self];
+  }
+}
+
+- (void)copyState
+{
+  if (nextState == 1)
+  {
+    state = TRUE;
+  }
+  else
+  {
+    state = FALSE;
+  }
+}
+
+- (void)iterate
+{
+  if (nextState != -1)
+  {
+    [self copyState];
+    nextState = -1;
   }
 }
 

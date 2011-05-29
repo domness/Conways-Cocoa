@@ -81,4 +81,34 @@
   STAssertEquals(two, cell1.aliveNeighboursCount, @"");
 }
 
+- (void)testShouldHaveANextState
+{
+  Cell * cell1 = [[Cell alloc] init];
+  STAssertFalse(cell1.state, @"");
+
+  cell1.state = TRUE;
+  STAssertTrue(cell1.state, @"");
+
+  cell1.nextState = 0;
+  STAssertTrue(cell1.state, @"");
+
+  [cell1 iterate];
+  STAssertFalse(cell1.state, @"");
+
+  cell1.nextState = 1;
+  STAssertFalse(cell1.state, @"");
+
+  [cell1 iterate];
+  STAssertTrue(cell1.state, @"");
+
+  [cell1 iterate];
+  STAssertTrue(cell1.state, @"");
+
+  cell1.state = FALSE;
+  STAssertFalse(cell1.state, @"");
+
+  [cell1 iterate];
+  STAssertFalse(cell1.state, @"");
+}
+
 @end
