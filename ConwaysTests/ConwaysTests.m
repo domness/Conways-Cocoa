@@ -166,4 +166,17 @@
   }
 }
 
+- (void)testGridShouldHaveFiveNeighboursInFirstAndLastColumnExceptCorners
+{
+  NSUInteger neighbours = 5;
+  for (int i = 1; i < ROWS - 1; i++)
+  {
+    Cell * cell = [grid cellAtX:i andY:0];
+    STAssertEquals(neighbours, cell.neighboursCount, @"");
+    cell = [grid cellAtX:i andY:COLUMNS - 1];
+    STAssertEquals(neighbours, cell.neighboursCount, @"");
+    [cell release];
+  }
+}
+
 @end
