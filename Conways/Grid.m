@@ -83,6 +83,10 @@
       {
         cell.nextState = FALSE;
       }
+      if (cell.state == FALSE && cell.aliveNeighboursCount == 3)
+      {
+        cell.nextState = TRUE;
+      }
       [cell release];
     }
   }

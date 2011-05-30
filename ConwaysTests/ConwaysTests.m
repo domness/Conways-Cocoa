@@ -202,4 +202,20 @@
   STAssertFalse(cell.state, @"");
 }
 
+- (void)testGridShouldHaveCellsThatAreReborn
+{
+  Cell * cell1 = [grid cellAtX:0 andY:0];
+  cell1.state = TRUE;
+  Cell * cell2 = [grid cellAtX:1 andY:0];
+  cell2.state = TRUE;
+  Cell * cell3 = [grid cellAtX:2 andY:0];
+  cell3.state = TRUE;
+
+  Cell * testCell = [grid cellAtX:1 andY:1];
+  testCell.state = FALSE;
+
+  [grid evolve];
+  STAssertTrue(testCell.state, @"");
+}
+
 @end
