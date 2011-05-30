@@ -249,6 +249,18 @@
 {
   NSString * row = [grid getRow:1];
   STAssertEqualObjects(@"0000000000", row, @"");
+
+  Cell * cell = [grid cellAtX:1 andY:2];
+  cell.state = TRUE;
+  row = [grid getRow:1];
+  STAssertEqualObjects(@"0010000000", row, @"");
+
+  cell = [grid cellAtX:1 andY:3];
+  cell.state = TRUE;
+  row = [grid getRow:1];
+  STAssertEqualObjects(@"0011000000", row, @"");
+
+  [cell release];
 }
 
 @end
