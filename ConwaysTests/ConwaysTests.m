@@ -30,7 +30,7 @@
   STAssertFalse(cell.state, @"");
 }
 
-- (void)testShouldHaveNeigbours
+- (void)testCellShouldHaveNeigbours
 {
   Cell * cell1 = [[Cell alloc] init];
   Cell * cell2 = [[Cell alloc] init];
@@ -47,7 +47,7 @@
   STAssertEquals(one, cell2.neighboursCount, @"");
 }
 
-- (void)testShouldOnlyHaveASpecificCellOnce
+- (void)testCellShouldOnlyHaveASpecificCellOnce
 {
   Cell * cell1 = [[Cell alloc] init];
   Cell * cell2 = [[Cell alloc] init];
@@ -65,7 +65,7 @@
   STAssertEquals(one, cell2.neighboursCount, @"");
 }
 
-- (void)testShouldHaveAliveNeighbours
+- (void)testCellShouldHaveAliveNeighbours
 {
   Cell * cell1 = [[Cell alloc] init];
   Cell * cell2 = [[Cell alloc] init];
@@ -84,7 +84,7 @@
   STAssertEquals(two, cell1.aliveNeighboursCount, @"");
 }
 
-- (void)testShouldHaveANextState
+- (void)testCellShouldHaveANextState
 {
   Cell * cell1 = [[Cell alloc] init];
   STAssertFalse(cell1.state, @"");
@@ -114,11 +114,16 @@
   STAssertFalse(cell1.state, @"");
 }
 
-- (void)testShouldContainAGridOfCells
+- (void)testGridShouldContainAGridOfCells
 {
   grid = [[Grid alloc] initWithRows:ROWS andColumns:COLUMNS];
   Cell * cell = [grid cellAtX:0 andY:0];
   STAssertFalse(cell.state, @"");
+}
+
+- (void)testGridShouldHaveARowCount
+{
+
 }
 
 @end
