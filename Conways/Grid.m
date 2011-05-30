@@ -47,6 +47,11 @@
   return [[map objectAtIndex:x] objectAtIndex:y];
 }
 
+- (NSUInteger)rowCount
+{
+  return [map count];
+}
+
 - (void)dealloc
 {
   [super dealloc];

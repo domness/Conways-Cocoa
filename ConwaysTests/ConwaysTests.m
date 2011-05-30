@@ -15,6 +15,7 @@
 
 - (void)setUp
 {
+  grid = [[Grid alloc] initWithRows:ROWS andColumns:COLUMNS];
   [super setUp];
 }
 
@@ -116,14 +117,15 @@
 
 - (void)testGridShouldContainAGridOfCells
 {
-  grid = [[Grid alloc] initWithRows:ROWS andColumns:COLUMNS];
   Cell * cell = [grid cellAtX:0 andY:0];
   STAssertFalse(cell.state, @"");
+  [cell release];
 }
 
 - (void)testGridShouldHaveARowCount
 {
-
+  NSUInteger count = 5;
+  STAssertEquals(count, [grid rowCount], @"");
 }
 
 @end

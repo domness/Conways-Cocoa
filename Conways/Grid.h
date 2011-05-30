@@ -17,5 +17,6 @@
 
 - (Grid *)initWithRows:(int)rows andColumns:(int)columns;
 - (Cell *)cellAtX:(int)x andY:(int)y;
+- (NSUInteger)rowCount;
 
 @end
