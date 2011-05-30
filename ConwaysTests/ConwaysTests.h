@@ -11,6 +11,7 @@
 #import "Grid.h"
 
 @interface ConwaysTests : SenTestCase {
+  Grid * grid;
 @private
 }
 

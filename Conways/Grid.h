@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Cell.h"
 
 @interface Grid : NSObject {
+  NSMutableArray * map;
 @private
     
 }
+
+- (Grid *)initWithRows:(int)rows andColumns:(int)columns;
+- (Cell *)cellAtX:(int)x andY:(int)y;
 
 @end

@@ -8,6 +8,8 @@
 
 #import "ConwaysTests.h"
 
+#define ROWS 5
+#define COLUMNS 10
 
 @implementation ConwaysTests
 
@@ -18,6 +20,7 @@
 
 - (void)tearDown
 {
+  [grid release];
   [super tearDown];
 }
 
@@ -109,6 +112,13 @@
 
   [cell1 iterate];
   STAssertFalse(cell1.state, @"");
+}
+
+- (void)testShouldContainAGridOfCells
+{
+  grid = [[Grid alloc] initWithRows:ROWS andColumns:COLUMNS];
+  Cell * cell = [grid cellAtX:0 andY:0];
+  STAssertFalse(cell.state, @"");
 }
 
 @end
