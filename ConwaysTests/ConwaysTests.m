@@ -193,4 +193,13 @@
   }
 }
 
+- (void)testGridCellsShouldDieWhenTheyAreUnderPopulated
+{
+  Cell * cell = [grid cellAtX:3 andY:3];
+  STAssertFalse(cell.state, @"");
+  cell.state = TRUE;
+  [grid evolve];
+  STAssertFalse(cell.state, @"");
+}
+
 @end

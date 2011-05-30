@@ -57,6 +57,11 @@
   return [[map objectAtIndex:0] count];
 }
 
+- (void)evolve
+{
+  
+}
+
 - (void)dealloc
 {
   [super dealloc];

@@ -19,5 +19,6 @@
 - (Cell *)cellAtX:(int)x andY:(int)y;
 - (NSUInteger)rowCount;
 - (NSUInteger)columnCount;
+- (void)evolve;
 
 @end
