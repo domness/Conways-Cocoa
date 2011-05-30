@@ -39,7 +39,9 @@
           [cell addNeighbour:[[map objectAtIndex:x-1] objectAtIndex:y-1]];
         }
       }
+      [cell release];
     }
+    [col release];
   }
   return self;
 }
@@ -67,7 +69,6 @@
     {
       Cell * cell = [[map objectAtIndex:x] objectAtIndex:y];
       [cell iterate];
-      [cell release];
     }
   }
 }
@@ -91,7 +92,6 @@
       {
         cell.nextState = FALSE;
       }
-      [cell release];
     }
   }
   [self iterate];
@@ -111,6 +111,7 @@
       string = [string stringByAppendingString:@"1"];
     }
   }
+  [cells release];
   return string;
 }
 
