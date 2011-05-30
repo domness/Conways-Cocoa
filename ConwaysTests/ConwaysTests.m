@@ -134,4 +134,23 @@
   STAssertEquals(columns, [grid columnCount], @"");
 }
 
+- (void)testGridShouldHaveThreeNeighboursForCornerCells
+{
+  NSUInteger neighbours = 3;
+
+  Cell * cell = [grid cellAtX:0 andY:0];
+  STAssertEquals(neighbours, cell.neighboursCount, @"");
+
+  cell = [grid cellAtX:0 andY:COLUMNS - 1];
+  STAssertEquals(neighbours, cell.neighboursCount, @"");
+
+  cell = [grid cellAtX:ROWS - 1 andY:COLUMNS - 1];
+  STAssertEquals(neighbours, cell.neighboursCount, @"");
+
+  cell = [grid cellAtX:ROWS - 1 andY:0];
+  STAssertEquals(neighbours, cell.neighboursCount, @"");
+
+  [cell release];
+}
+
 @end
