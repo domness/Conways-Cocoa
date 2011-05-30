@@ -87,6 +87,10 @@
       {
         cell.nextState = TRUE;
       }
+      if (cell.state == TRUE && cell.aliveNeighboursCount > 3)
+      {
+        cell.nextState = FALSE;
+      }
       [cell release];
     }
   }

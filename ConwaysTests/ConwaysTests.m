@@ -206,16 +206,43 @@
 {
   Cell * cell1 = [grid cellAtX:0 andY:0];
   cell1.state = TRUE;
+  [cell1 release];
   Cell * cell2 = [grid cellAtX:1 andY:0];
   cell2.state = TRUE;
+  [cell2 release];
   Cell * cell3 = [grid cellAtX:2 andY:0];
   cell3.state = TRUE;
+  [cell3 release];
 
   Cell * testCell = [grid cellAtX:1 andY:1];
   testCell.state = FALSE;
 
   [grid evolve];
   STAssertTrue(testCell.state, @"");
+  [testCell release];
+}
+
+- (void)testGridShouldHaveCellsThatAreOverPopulated
+{
+  Cell * cell1 = [grid cellAtX:0 andY:0];
+  cell1.state = TRUE;
+  [cell1 release];
+  Cell * cell2 = [grid cellAtX:1 andY:0];
+  cell2.state = TRUE;
+  [cell2 release];
+  Cell * cell3 = [grid cellAtX:2 andY:0];
+  cell3.state = TRUE;
+  [cell3 release];
+  Cell * cell4 = [grid cellAtX:0 andY:1];
+  cell4.state = TRUE;
+  [cell4 release];
+
+  Cell * testCell = [grid cellAtX:1 andY:1];
+  testCell.state = TRUE;
+
+  [grid evolve];
+  STAssertFalse(testCell.state, @"");
+  [testCell release];
 }
 
 @end
