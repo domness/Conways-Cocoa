@@ -245,4 +245,10 @@
   [testCell release];
 }
 
+- (void)testGridShouldBeAbleToPrintOutItsRows
+{
+  NSString * row = [grid getRow:1];
+  STAssertEqualObjects(@"0000000000", row, @"");
+}
+
 @end

@@ -97,6 +97,23 @@
   [self iterate];
 }
 
+- (NSString *)getRow:(int)row
+{
+  NSString * string = @"";
+  NSArray * cells = [[NSArray alloc] initWithArray:[map objectAtIndex:row]];
+  for (Cell * cell in cells) {
+    if (cell.state == FALSE)
+    {
+      string = [string stringByAppendingString:@"0"];
+    }
+    else
+    {
+      string = [string stringByAppendingString:@"1"];
+    }
+  }
+  return string;
+}
+
 - (void)dealloc
 {
   [super dealloc];

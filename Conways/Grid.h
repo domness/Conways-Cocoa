@@ -21,5 +21,6 @@
 - (NSUInteger)rowCount;
 - (NSUInteger)columnCount;
 - (void)evolve;
+- (NSString *)getRow:(int)row;
 
 @end
