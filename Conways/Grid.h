@@ -22,5 +22,6 @@
 - (NSUInteger)columnCount;
 - (void)evolve;
 - (NSString *)getRow:(int)row;
+- (void)printGrid;
 
 @end

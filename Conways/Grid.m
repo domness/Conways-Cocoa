@@ -115,6 +115,14 @@
   return string;
 }
 
+- (void)printGrid
+{
+  for (int i = 0; i < ROWS; i++)
+  {
+    NSLog(@"%@", [self getRow:i]);
+  }
+}
+
 - (void)dealloc
 {
   [super dealloc];
