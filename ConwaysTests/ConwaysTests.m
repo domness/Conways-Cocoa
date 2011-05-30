@@ -141,13 +141,13 @@
   Cell * cell = [grid cellAtX:0 andY:0];
   STAssertEquals(neighbours, cell.neighboursCount, @"");
 
-  cell = [grid cellAtX:0 andY:COLUMNS - 1];
+  cell = [grid cellAtX:0 andY:COLUMNS-1];
   STAssertEquals(neighbours, cell.neighboursCount, @"");
 
-  cell = [grid cellAtX:ROWS - 1 andY:COLUMNS - 1];
+  cell = [grid cellAtX:ROWS-1 andY:COLUMNS-1];
   STAssertEquals(neighbours, cell.neighboursCount, @"");
 
-  cell = [grid cellAtX:ROWS - 1 andY:0];
+  cell = [grid cellAtX:ROWS-1 andY:0];
   STAssertEquals(neighbours, cell.neighboursCount, @"");
 
   [cell release];
@@ -176,6 +176,20 @@
     cell = [grid cellAtX:i andY:COLUMNS - 1];
     STAssertEquals(neighbours, cell.neighboursCount, @"");
     [cell release];
+  }
+}
+
+- (void)testGridShouldHaveEightNeighboursWhenNotAlongEdges
+{
+  NSUInteger neighbours = 8;
+  for (int x = 1; x < ROWS - 1; x++)
+  {
+    for (int y = 1; y < COLUMNS - 1; y++)
+    {
+      Cell * cell = [grid cellAtX:x andY:y];
+      STAssertEquals(neighbours, cell.neighboursCount, @"");
+      [cell release];
+    }
   }
 }
 
