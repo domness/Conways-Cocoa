@@ -12,8 +12,8 @@
 @interface Cell : NSObject {
   BOOL state;
   int nextState;
-  NSMutableArray * neighbours;
 @private
+  NSMutableArray * neighbours;
 }
 
 @property (nonatomic, assign) BOOL state;
