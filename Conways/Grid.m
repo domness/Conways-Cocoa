@@ -52,6 +52,11 @@
   return [map count];
 }
 
+- (NSUInteger)columnCount
+{
+  return [[map objectAtIndex:0] count];
+}
+
 - (void)dealloc
 {
   [super dealloc];

@@ -124,8 +124,14 @@
 
 - (void)testGridShouldHaveARowCount
 {
-  NSUInteger count = 5;
-  STAssertEquals(count, [grid rowCount], @"");
+  NSUInteger rows = ROWS;
+  STAssertEquals(rows, [grid rowCount], @"");
+}
+
+- (void)testGridShouldHaveAColumnCount
+{
+  NSUInteger columns = COLUMNS;
+  STAssertEquals(columns, [grid columnCount], @"");
 }
 
 @end
