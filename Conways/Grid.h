@@ -12,7 +12,8 @@
 @interface Grid : NSObject {
   NSMutableArray * map;
 @private
-    
+  int ROWS;
+  int COLUMNS;
 }
 
 - (Grid *)initWithRows:(int)rows andColumns:(int)columns;

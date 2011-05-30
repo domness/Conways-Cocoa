@@ -13,6 +13,8 @@
 - (Grid *)initWithRows:(int)rows andColumns:(int)columns
 {
   map = [[NSMutableArray alloc] initWithCapacity:rows];
+  ROWS = rows;
+  COLUMNS = columns;
   for (int x = 0; x < rows; x++)
   {
     NSMutableArray * col = [[NSMutableArray alloc] initWithCapacity:columns];
@@ -57,9 +59,34 @@
   return [[map objectAtIndex:0] count];
 }
 
+- (void)iterate
+{
+  for (int x = 0; x < ROWS; x++)
+  {
+    for (int y = 0; y < COLUMNS; y++)
+    {
+      Cell * cell = [[map objectAtIndex:x] objectAtIndex:y];
+      [cell iterate];
+      [cell release];
+    }
+  }
+}
+
 - (void)evolve
 {
-  
+  for (int x = 0; x < ROWS; x++)
+  {
+    for (int y = 0; y < COLUMNS; y++)
+    {
+      Cell * cell = [[map objectAtIndex:x] objectAtIndex:y];
+      if (cell.state == TRUE && cell.aliveNeighboursCount < 2)
+      {
+        cell.nextState = FALSE;
+      }
+      [cell release];
+    }
+  }
+  [self iterate];
 }
 
 - (void)dealloc
