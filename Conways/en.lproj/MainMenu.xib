@@ -1332,20 +1332,20 @@
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSCustomView" id="933389567">
+						<object class="NSCustomView" id="868412256">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
 							<object class="NSMutableArray" key="NSSubviews">
 								<bool key="EncodedWithXMLCoder">YES</bool>
-								<object class="NSButton" id="840336364">
-									<reference key="NSNextResponder" ref="933389567"/>
-									<int key="NSvFlags">268</int>
-									<string key="NSFrame">{{192, 64}, {96, 32}}</string>
-									<reference key="NSSuperview" ref="933389567"/>
+								<object class="NSButton" id="470599654">
+									<reference key="NSNextResponder" ref="868412256"/>
+									<int key="NSvFlags">293</int>
+									<string key="NSFrame">{{192, 12}, {96, 32}}</string>
+									<reference key="NSSuperview" ref="868412256"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView"/>
 									<bool key="NSEnabled">YES</bool>
-									<object class="NSButtonCell" key="NSCell" id="1056080488">
+									<object class="NSButtonCell" key="NSCell" id="87349450">
 										<int key="NSCellFlags">67239424</int>
 										<int key="NSCellFlags2">134217728</int>
 										<string key="NSContents">Play</string>
@@ -1354,7 +1354,7 @@
 											<double key="NSSize">13</double>
 											<int key="NSfFlags">1044</int>
 										</object>
-										<reference key="NSControlView" ref="840336364"/>
+										<reference key="NSControlView" ref="470599654"/>
 										<int key="NSButtonFlags">-2038284033</int>
 										<int key="NSButtonFlags2">129</int>
 										<string key="NSAlternateContents"/>
@@ -1367,14 +1367,14 @@
 							<string key="NSFrameSize">{480, 360}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="840336364"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSClassName">NSView</string>
 						</object>
 					</object>
 					<string key="NSFrame">{{7, 11}, {480, 360}}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
-					<reference key="NSNextKeyView" ref="933389567"/>
+					<reference key="NSNextKeyView" ref="868412256"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
 				<string key="NSMaxSize">{1e+13, 1e+13}</string>
@@ -1385,7 +1385,7 @@
 			<object class="NSCustomObject" id="755631768">
 				<string key="NSClassName">NSFontManager</string>
 			</object>
-			<object class="NSCustomObject" id="187111936">
+			<object class="NSCustomObject" id="556777230">
 				<string key="NSClassName">GameController</string>
 			</object>
 		</object>
@@ -2075,16 +2075,16 @@
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">view</string>
-						<reference key="source" ref="187111936"/>
-						<reference key="destination" ref="933389567"/>
+						<reference key="source" ref="556777230"/>
+						<reference key="destination" ref="868412256"/>
 					</object>
 					<int key="connectionID">535</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">play:</string>
-						<reference key="source" ref="187111936"/>
-						<reference key="destination" ref="840336364"/>
+						<reference key="source" ref="556777230"/>
+						<reference key="destination" ref="470599654"/>
 					</object>
 					<int key="connectionID">538</int>
 				</object>
@@ -2643,7 +2643,7 @@
 						<reference key="object" ref="439893737"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="933389567"/>
+							<reference ref="868412256"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3135,31 +3135,31 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">533</int>
-						<reference key="object" ref="933389567"/>
+						<reference key="object" ref="868412256"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="840336364"/>
+							<reference ref="470599654"/>
 						</object>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">534</int>
-						<reference key="object" ref="187111936"/>
+						<reference key="object" ref="556777230"/>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">536</int>
-						<reference key="object" ref="840336364"/>
+						<reference key="object" ref="470599654"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="1056080488"/>
+							<reference ref="87349450"/>
 						</object>
-						<reference key="parent" ref="933389567"/>
+						<reference key="parent" ref="868412256"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">537</int>
-						<reference key="object" ref="1056080488"/>
-						<reference key="parent" ref="840336364"/>
+						<reference key="object" ref="87349450"/>
+						<reference key="parent" ref="470599654"/>
 					</object>
 				</object>
 			</object>
@@ -3698,7 +3698,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">538</int>
+			<int key="maxID">555</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

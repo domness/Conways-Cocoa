@@ -9,9 +9,12 @@
 #import <Cocoa/Cocoa.h>
 #import "Grid.h"
 #import "Cell.h"
+#import "CellView.h"
 
 @interface GameController : NSViewController {
+
 @private
+  Grid * grid;
 }
 
 - (IBAction)play:(id)sender;

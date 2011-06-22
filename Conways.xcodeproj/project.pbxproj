@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04613A39139435530020C6CD /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04613A37139435530020C6CD /* GameController.m */; };
+		04613A3D13943A530020C6CD /* CellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04613A3C13943A520020C6CD /* CellView.m */; };
 		049C8DFA1391B66200FF2017 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C8DF91391B66200FF2017 /* Cell.m */; };
 		04ED12E71392891B000F45B7 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED12E61392891B000F45B7 /* Grid.m */; };
 		04FD9CDD1391B52500B596D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FD9CDC1391B52500B596D9 /* Cocoa.framework */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		04613A36139435530020C6CD /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
 		04613A37139435530020C6CD /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		04613A3B13943A520020C6CD /* CellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellView.h; sourceTree = "<group>"; };
+		04613A3C13943A520020C6CD /* CellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellView.m; sourceTree = "<group>"; };
 		049C8DF81391B66200FF2017 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
 		049C8DF91391B66200FF2017 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		04ED12E51392891B000F45B7 /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				04FD9CF11391B52600B596D9 /* MainMenu.xib */,
 				04613A36139435530020C6CD /* GameController.h */,
 				04613A37139435530020C6CD /* GameController.m */,
+				04613A3B13943A520020C6CD /* CellView.h */,
+				04613A3C13943A520020C6CD /* CellView.m */,
 				049C8DF81391B66200FF2017 /* Cell.h */,
 				049C8DF91391B66200FF2017 /* Cell.m */,
 				04ED12E51392891B000F45B7 /* Grid.h */,
@@ -277,6 +282,7 @@
 				049C8DFA1391B66200FF2017 /* Cell.m in Sources */,
 				04ED12E71392891B000F45B7 /* Grid.m in Sources */,
 				04613A39139435530020C6CD /* GameController.m in Sources */,
+				04613A3D13943A530020C6CD /* CellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,12 +13,17 @@
 
 - (IBAction)play:(id)sender
 {
-  Grid * grid = [[Grid alloc] initWithRows:5 andColumns:10];
+  grid = [[Grid alloc] initWithRows:5 andColumns:10];
   Cell * cell = [grid cellAtX:2 andY:4];
   cell.state = TRUE;
+
+//  NSCollectionViewItem * item = [collectionView itemAtIndex:5];
+//  NSView * view = [[CellView alloc] initWithFrame:[[item view] frame]];
+//  [view changeColor:[NSColor blackColor]];
+//  [item setView:view];
+
   cell = [grid cellAtX:2 andY:5];
   cell.state = TRUE;
-  [cell release];
   [grid printGrid];
 }
 
